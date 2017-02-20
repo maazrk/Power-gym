@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+    <head>
+       
+        <title>POWER GYM</title>
+       
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+	<style>
+	.di {
+    background-color: grey;
+}
+.th1 { 
+
+
+padding: 20px;
+
+}
+.hoverTable{
+		width:100%; 
+		border-collapse:collapse; 
+
+	
+
+	}
+	/* Define the default color for all the table rows */
+	.hoverTable th{
+		background: grey;
+		
+
+webkit-transition: background .25s ease-in;
+    -moz-transition: background .25s ease-in;
+    -o-transition: background .25s ease-in;
+    -ms-transition: background .25s ease-in;
+    transition: background .25s ease-in;
+
+
+	}
+	
+	
+	/* Define the hover highlight color for the table row */
+    .hoverTable th:hover {
+          background: #ff1919;
+color:white;
+cursor: hand;
+		  
+
+    }
+	.fontclass{
+	font-family:IMPACT;color:WHITE;background:#ff1919;}
+	.textdeco{text-decoration:none;}
+	th11 {
+padding:10px;}
+	</style>
+	<script>
+	function reg(){
+	document.getElementById("regg").style.cursor = "pointer";
+	document.getElementById("regg").style.fontFamily = "Impact";
+
+	document.getElementById("regg").style.fontSize = "50px";
+	document.getElementById("regg").style.padding = "20px";
+	document.getElementById("regg").style.color = "white";
+	document.getElementById("regg").innerHTML = "CLICK HERE TO REGISTER"}
+function unreg(){
+document.getElementById("regg").style.fontFamily = "Impact";
+document.getElementById("regg").style.color = "white";
+document.getElementById("regg").style.padding = "20px";
+document.getElementById("regg").innerHTML = "POWER GYM"}
+function nav(){
+window.location.href = 'signinwpage.html';}
+	</script>
+    </head>
+	
+    <body id="page">
+	<header>
+<div class="di"><table class="hoverTable"><tr><a href="signinwpage.html" class="textdeco"><th id="regg" class="th1" onclick="nav();" onmouseover="reg(this);" onmouseout="unreg(this);"><font face="IMPACT" color=WHITE size=7> POWER GYM</font>   </th> </a> 
+
+<th class="th1"><a href="index.html"  class="textdeco"><font color=WHITE>HOME</font></a>     </th> 
+<th class="th1"><a href="signinwpage.html"  class="textdeco"><font color=WHITE>REGISTER</font></a>     </th> 
+<th class="th1"><a href="a.html" class="textdeco"><font color=WHITE>FEATURES</font></a>      </th>
+<th class="th1"><a href="about.html"  class="textdeco"><font color=WHITE>ABOUT</font></a>      </th>
+<th class="th1"><a href="atutorials.html" class="textdeco"><font color=WHITE>TUTORIALS</font></a>     </th> 
+
+<th class="th1"><a href="contactus.html"  class="textdeco"><font color=WHITE>CONTACT</font></a></font>  </th>     
+<th class="th11"><a style="text-decoration:none;" href="http://www.facebook.com" ><img src="facebook.png" alt="facebook"></a></th>
+<th class="th11"> <a style="text-decoration:none;" href="http://www.twitter.com" ><img src="twitter.png" alt="twitter"> </a></th>
+<th class="th11"><a style="text-decoration:none;" href="http://www.youtube.com" ><img src="youtube.png" alt="youtube"> </a></th>
+<th class="th11"><a style="text-decoration:none;" href="http://www.instagram.com" ><img src="instagram.png" alt="instagram"></a></th></tr></table></div>
+
+
+</header>
+	
+        <ul class="cb-slideshow">
+            <li><span>Image 01</span><div><h3>BUILD</h3></div></li>
+            <li><span>Image 02</span><div><h3>IMPROVE</h3></div></li>
+            <li><span>Image 03</span><div><h3>MAINTAIN</h3></div></li>
+            <li><span>Image 04</span><div><h3>LIVE LONG</h3></div></li>
+            <li><span>Image 05</span><div><h3>BE STRONG</h3></div></li>
+            <li><span>Image 06</span><div><h3>REGISTER NOW</h3></div></li>
+        </ul>
+        
+            </div>
+            
+        </div>
+    </body>
+</html>

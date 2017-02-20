@@ -1,0 +1,230 @@
+<html>
+<head>
+<script>
+
+window.onbeforeunload = function(e) { // This code works on its own
+       return "";
+    };
+function agefunction() {
+    var x,y, textage,textweight,returnValue = true;
+
+    // Get the value of the input field with id="age"
+    x = document.getElementById("age").value;
+	y = document.getElementById("weight").value;
+
+    // If x is Not a Number or less than 10 or greater than 65
+    if((isNaN(x) || x < 10 || x > 65)&&(isNaN(y) || y < 1 || y > 150))
+	{textage = "Please enter your correct age & weight";
+	window.alert(textage);
+	returnValue = false;
+	}
+	else{
+	if (isNaN(x) || x < 10 || x > 65) {
+        textage = "Please enter your correct age";
+    
+	window.alert(textage);
+	returnValue = false;}
+    
+    
+
+    if (isNaN(y) || y < 1 || y > 150) {
+        textweight = "Please enter your correct weight";
+    
+	window.alert(textweight);
+	returnValue = false;
+    }
+	return returnValue;
+	    }
+}
+function passwordFunction(){
+var x;
+x = document.getElementById("pass").value;
+if(x.length<8)
+{window.alert("Please enter a password of atleast 8 characters")
+return false}
+return true;
+}
+function choicefunction1(){
+
+document.getElementById("choice2").style.backgroundColor='grey';
+document.getElementById("choice2").style.color='black';
+
+document.getElementById("choice1").style.backgroundColor = '#FF1919';
+document.getElementById("choice1").style.color='white';
+}
+function choicefunction2(){
+
+document.getElementById("choice1").style.backgroundColor='grey';
+document.getElementById("choice1").style.color='black';
+
+document.getElementById("choice2").style.backgroundColor = '#FF1919';
+document.getElementById("choice2").style.color='white';
+}
+function dialogue(){
+window.alert("Details Submitted");
+}
+</script>
+</head>
+<style>
+.hoverTable{
+		width:100%; 
+		border-collapse:collapse; 
+
+	
+
+	}
+	/* Define the default color for all the table rows */
+	.hoverTable th{
+		background: grey;
+		
+
+webkit-transition: background .25s ease-in;
+    -moz-transition: background .25s ease-in;
+    -o-transition: background .25s ease-in;
+    -ms-transition: background .25s ease-in;
+    transition: background .25s ease-in;
+
+
+	}
+	
+	
+	/* Define the hover highlight color for the table row */
+    .hoverTable th:hover {
+          background: #ff1919;
+color:white;
+cursor: hand;
+		  
+
+    }
+	input[type=text],select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+	background-color:#e9e9e9;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.th1 { 
+
+
+padding: 20px;
+
+ border
+}
+.di {
+    background-color: grey;
+}
+.th2 {
+color: black;
+   border: 1px solid #e9e9e9;
+   width:12cm;
+   height:12cm;
+}
+input[type=button],[type=submit],[type=email] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+	color: white;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+	background-color: #ff1919;
+    box-sizing: border-box;
+}
+input[type=password] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #e9e9e9;
+	background-color:#e9e9e9;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.fontclass{
+	font-family:IMPACT;color:WHITE;background:#ff1919;}
+	.textdeco{text-decoration:none;}
+th11 {
+padding:10px;}
+</style>
+<body>
+<header>
+<div class="di"><table class="hoverTable"><tr><th class="th1"><a href="index.html" class="textdeco"><font face="IMPACT" color=WHITE size=7> POWER GYM</font></a>    </th> 
+
+<th class="th1"><a href="index.html"  class="textdeco"><font color=WHITE>HOME</font></a>     </th> 
+<th class="th1"><a href="signinwpage.html"  class="textdeco"><font color=WHITE>REGISTER</font></a>     </th> 
+<th class="th1"><a href="a.html" class="textdeco"><font color=WHITE>FEATURES</font></a>      </th>
+<th class="th1"><a href="about.html"  class="textdeco"><font color=WHITE>ABOUT</font></a>      </th>
+<th class="th1"><a href="atutorials.html" class="textdeco"><font color=WHITE>TUTORIALS</font></a>     </th> 
+
+<th class="th1"><a href="contactus.html"  class="textdeco"><font color=WHITE>CONTACT</font></a></font>  </th>     
+<th class="th11"><a style="text-decoration:none;" href="http://www.facebook.com" ><img src="facebook.png" alt="facebook"></a></th>
+<th class="th11"> <a style="text-decoration:none;" href="http://www.twitter.com" ><img src="twitter.png" alt="twitter"> </a></th>
+<th class="th11"><a style="text-decoration:none;" href="http://www.youtube.com" ><img src="youtube.png" alt="youtube"> </a></th>
+<th class="th11"><a style="text-decoration:none;" href="http://www.instagram.com" ><img src="instagram.png" alt="instagram"></a></th></tr></table></div>
+
+</header><p id="regpage"></p><center>
+<table style="border: 1px solid #e9e9e9; display:table;
+         margin-right:auto;
+         margin-left:auto;
+         width:60%;">
+<br></br>
+<tr>
+<th>
+<br></br>
+<big>Choose Membership Type</big>
+<br></br>
+<br><table class="hoverTable"><tr><th id="choice1" class="th1"  onclick="choicefunction1();">Full Package</th></tr><tr><th id="choice2" class="th1" onclick="choicefunction2();">Access to Online Services and Offers</th></tr></table></br>
+
+</th>
+</tr>
+</table>
+<br>
+<table style="border: 1px solid #e9e9e9; display:table;
+         margin-right:auto;
+         margin-left:auto;
+         width:60%;">
+<tr><th>Personal Details<br>
+<form onSubmit="dialogue();">
+<br><div style="margin-right: 13.5cm;">Enter your name</div>
+ <input style="width: 40%;" type="text" id="fname" name="firstname" placeholder="First name" required autocomplete="on">
+
+ <input style="width: 40%;" type="text" id="lname" name="lastname" placeholder="Last name" required autocomplete="on"><br><br>
+
+ <input style="width: 30%;" type="text" id="age" name="age" placeholder="Age" required autocomplete="on">
+  <input style="width: 30%;" type="text" id="weight" name="Weight" placeholder="Weight in Kg" required autocomplete="on">
+ <br> <br>Gender</br>
+ 
+  <label >
+    <select required autocomplete="on" style="width: 30%;">
+        <option selected style="color: grey;"> Sex </option>
+        <option>Male</option>
+        <option>Female</option>
+		<option>Other</option>
+    </select>
+</label>
+ 
+ 
+<br><input type="submit" onclick="return agefunction()" id="submit" name="submit" value="Submit Details" href="features.html" style="width: 30%;cursor: hand;">
+
+</form></th></tr>
+</table>
+<br>
+<table style="border: 1px solid #e9e9e9; display:table;
+         margin-right:auto;
+         margin-left:auto;
+         width:60%;">
+<tr><th>Registration Details<br>
+<form action="atutorials.html">
+<br>
+  <br><input style="background-color:#e9e9e9; color:black;" type="email" id="fname" name="firstname" placeholder="Email ID" required autocomplete="on">
+ <br><br><input type="password" id="pass" name="password" placeholder="Set a Password" required autocomplete="on">
+  <br><br><input type="submit" onclick="return passwordFunction()" id="submit" name="submit" value="Register" style="cursor: hand;" href="features.html">
+
+</form></th></tr>
+</table>
+
+</center></body>
+</html>
