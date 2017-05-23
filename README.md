@@ -1,6 +1,6 @@
 # Power-gym
 Power-gym  Mini Project on Online Fitness Management System using various web technologies
-
+<img src="https://github.com/maazrk/Power-gym/blob/master/Swing%20Staff%20Panel/homepg.png" width="800">
 
 
 #Swing Staff Panel
