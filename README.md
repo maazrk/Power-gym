@@ -8,3 +8,4 @@ The folder swing staff panel contains a control panel interface for the gym staf
 <img src="https://github.com/maazrk/Power-gym/blob/master/Swing%20Staff%20Panel/login.png" width="400">
 <img src="https://github.com/maazrk/Power-gym/blob/master/Swing%20Staff%20Panel/dash.png" width="400">
 <img src="https://github.com/maazrk/Power-gym/blob/master/Swing%20Staff%20Panel/Member.png" width="400">
+<img src="https://github.com/maazrk/Power-gym/blob/master/Swing%20Staff%20Panel/Products.png" width="400">
